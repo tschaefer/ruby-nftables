@@ -10,11 +10,14 @@ Gem::Specification.new do |spec|
   spec.authors     = ['Tobias Schäfer']
   spec.email       = ['github@blackox.org']
 
-  spec.summary     = 'Ruby nftables C-library wrapper.'
+  spec.summary     = 'Ruby high-level userspace netfilter nftables package.'
   spec.description = <<~DESC
     #{spec.summary}
 
-    Run any nftables command.
+    This package is a foreign function interface for the high-level userspace
+    netfilter nftables library.
+
+    It provides a basic run method, to execute nftables commands.
   DESC
   spec.homepage = 'https://github.com/tschaefer/ruby-nftables'
   spec.license  = 'GPL-3.0-or-later'

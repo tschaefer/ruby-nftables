@@ -9,9 +9,8 @@ require_relative 'nft/ctx'
 # The NFT module is a foreign function interface for the high-level
 # userspace netfilter nftables library.
 #
-# Currently it only provides a basic run method, to execute nftables commands.
-# For valid commands see the nftables(8) manpage and the nftables wiki at
-# https://wiki.nftables.org.
+# It provides a basic run method, to execute nftables commands. For valid
+# commands see the +nftables+(8) manpage and the {nftables wiki}[https://wiki.nftables.org].
 module NFT
   class << self
     include NFT::Ctx
@@ -41,7 +40,7 @@ module NFT
       ensure
         ctx_free
       end
-      return raise stderror if !rc.zero?
+      return raise stderror unless rc.zero?
 
       return [] if stdout.nil? || stdout.empty?
 
