@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'ffi', '~> 1.15.5'
+gem 'ffi', '~> 1.16.1'
 
 group :development, :test do
   gem 'irbtools', require: 'irbtools/binding'
