@@ -19,7 +19,7 @@ GEM
     fancy_irb (1.4.3)
       paint (>= 0.9, < 3.0)
       unicode-display_width (>= 1.1)
-    ffi (1.16.2)
+    ffi (1.16.3)
     hirb (0.7.3)
     interactive_editor (0.0.12)
       spoon (~> 0.0.6)
@@ -121,7 +121,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ffi (~> 1.16.2)
+  ffi (~> 1.16.3)
   irbtools
   rake
   rspec
