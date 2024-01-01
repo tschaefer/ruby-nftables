@@ -1,13 +1,19 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-
-gem 'ffi', '~> 1.16.3'
+gemspec
 
 group :development, :test do
-  gem 'irbtools', require: 'irbtools/binding'
   gem 'rake'
+
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-remote'
+  gem 'pry-rescue'
+
   gem 'rspec'
+
   gem 'rubocop'
   gem 'rubocop-rake'
   gem 'rubocop-rspec'

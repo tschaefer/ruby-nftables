@@ -29,4 +29,8 @@ Gem::Specification.new do |spec|
   spec.metadata['rubygems_mfa_required'] = 'true'
   spec.metadata['source_code_uri']       = 'https://github.com/tschaefer/ruby-nftables'
   spec.metadata['bug_tracker_uri']       = 'https://github.com/tschaefer/ruby-nftables/issues'
+
+  spec.post_install_message = 'All your nftables are belong to us!'
+
+  spec.add_dependency 'ffi', '~> 1.16.1'
 end
