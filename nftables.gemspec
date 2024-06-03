@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = 'All your nftables are belong to us!'
 
-  spec.add_dependency 'ffi', '~> 1.16.1'
+  spec.add_dependency 'ffi', '>= 1.16.1', '< 1.18.0'
 end
